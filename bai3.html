@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body onload="factorial()">
+<script>
+  function factorial (){
+    let n = Number(prompt('Nhập số bạn cần tìm giai thừa'));
+    let fac = 1;
+    for (let i = 1 ; i<=n;i++){
+      fac *= i;
+    }
+    document.write('Giai thừa số bạn vừa nhập là: '+fac);
+    return fac;
+  }
+</script>
+</body>
+</html>

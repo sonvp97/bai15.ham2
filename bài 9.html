@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 9</title>
+</head>
+<body onload="characters()">
+<script>
+  let arr = ['#','!','%','@','*',')','^','@','*','!','%','@','*',')'];
+  function characters(){
+    let text = prompt('Nhập ký tự bạn muốn kiểm tra');
+    let sum = 0;
+    for (let i = 0;i<arr.length;i++){
+      if (text === arr[i]) {
+        sum += 1;
+      }
+      else {
+          sum += 0;
+      }
+    }
+    if (sum>0){
+        document.write('Số lần xuất hiện ký tự là: '+sum);
+    }
+    else {
+        document.write('Ký tự của bạn không có trong mảng');
+    }
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 7</title>
+</head>
+<body onload="places()">
+<script>
+  function places(){
+    let arr = [];
+    for (let i = 0;i < 2;i++){
+      num = parseInt(prompt('Nhập số nguyên bất kỳ'));
+
+      arr.push(num);
+    }
+    arr.reverse();
+    document.write(arr);
+  }
+</script>
+</body>
+</html>

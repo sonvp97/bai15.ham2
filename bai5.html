@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 5</title>
+</head>
+<body onload="integer()">
+<script>
+  function integer(){
+      let arr = [];
+      for (let i = 0;i < 3;i++){
+          num = parseInt(prompt('Nhập số bạn muốn kiểm tra'));
+          arr.push(num);
+      }
+      min = arr[0]
+      for (let j=1;j<3;j++){
+          if (arr[j] < min){
+              min = arr[j];
+          }
+      }
+      document.write('Số nhỏ nhất trong 3 số bạn nhập là: '+min);
+
+  }
+</script>
+</body>
+</html>

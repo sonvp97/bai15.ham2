@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+<input type="text" id="text">
+<button onclick="check()">Kiểm tra</button>
+<script>
+    function check() {
+        num = '0123456789';
+        text = document.getElementById('text').value;
+        result = 0;
+        for (let i = 1; i < text.length; i++) {
+            if (num.indexOf(text[i]) !== -1) {
+                result += i;
+            } else {
+                result -= 100000;
+            }
+        }
+        if (result >= 1 ){
+            document.write('true');
+        }
+        else {
+            document.write('false');
+        }
+    }
+</script>
+</body>
+</html>
